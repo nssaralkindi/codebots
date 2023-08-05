@@ -12,20 +12,22 @@ async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_message(
         chat_id=msg.chat.id,
-        text=f"""Hᴇʏ {msg.from_user.mention},
+        text=f"""✷ مـرحبا بـك عزيزي {msg.from_user.mention},
 
-Tʜɪs ɪs {me2},
-Aɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴩʏʀᴏɢʀᴀᴍ.
+✷ انا {me2},
+✷ لاستخراج جلسات البايروجرام و تيرمكس,
 
-Mᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ : [𝐒𝐇𝐀𝐑𝐊](tg://user?id={OWNER_ID}) !""",
+✷ يمكنك استخراج الجلسه من الاوامر والازرار ادناه 👇🏻✔️
+
+المطور ʙʏ : [𝗞𝗜𝗡𝗗𝗜 〄](tg://user?id={OWNER_ID}) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="🙄 ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 🙄", callback_data="generate")
+                    InlineKeyboardButton(text="بدء الان", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊", url="https://t.me/L_H_V"),
-                    InlineKeyboardButton("🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=OWNER_ID)
+                    InlineKeyboardButton("قناة البوت", url="https://t.me/NNINB"),
+                    InlineKeyboardButton("المطور", user_id=OWNER_ID)
                 ]
             ]
         ),
